@@ -1,0 +1,18 @@
+{
+  "python.useEnvironmentsExtension": true,
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always",
+    "source.fixAll.pylance": "always",
+    "source.organizeLinkDefinitions": "always",
+    "source.convertImportFormat": "always"
+  },
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultColorDecorators": "never",
+    "editor.formatOnType": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.formatOnSave": true
+  },
+  "python.analysis.typeCheckingMode": "standard"
+}

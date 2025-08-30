@@ -1,2 +1,3 @@
-# hosting-utilities-py
-Website hosting utilities
+# Website hosting utilities
+
+My Python Website hosting utilities.
