@@ -1,0 +1,37 @@
+[project]
+name = "hosting-utilities"
+version = "0.1.0"
+description = "Utilities for hosting and backup automation."
+authors = [{name = "John Mitchell-Grant", email = "jgrant_dev@icloud.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "onepasswordconnectsdk", 
+    "typing-extensions>=4.8.0",
+]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I", "UP", "B", "C90", "N", "D", "ANN", "S", "A", "COM", "C4", "DTZ", "EM", "ERA", "EXE", "G", "INP", "ISC", "PIE", "PT", "Q", "RET", "SIM", "T20", "TID", "TRY", "RUF"]
+ignore = []
+
+[tool.ruff.lint]
+# Enable unused variable warnings, etc.
+select = ["F", "E", "W"]
+
+[tool.ruff.format]
+quote-style = "double"
+skip-magic-trailing-comma = false
+
+[tool.ruff.isort]
+known-first-party = ["hosting_utilities"]
+
+[tool.pyright]
+typeCheckingMode = "basic"
+
+[tool.setuptools]
+packages = ["hosting_utilities"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
