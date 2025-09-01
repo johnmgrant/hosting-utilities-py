@@ -3,7 +3,9 @@ import os
 from typing import Any, Dict
 
 
-def request_cli_input(subprogram: str, arg_definitions: Dict[str, Dict[str, Any]]):
+def request_cli_input(
+    subprogram: str, arg_definitions: Dict[str, Dict[str, Any]]
+) -> argparse.Namespace:
     """
     Reusable function to request input fields for CLI commands.
     subprogram: Name of the subprogram (str)
@@ -26,7 +28,7 @@ def extract_env_vars(site_name: str, env_dir: str = "environments") -> Dict[str,
     Returns a dict of env variables if file exists, else empty dict.
     """
     env_path = os.path.join(env_dir, f".{site_name}.env")
-    env_vars = {}
+    env_vars: Dict[str, str] = {}
     if os.path.isfile(env_path):
         with open(env_path) as f:
             for line in f:
