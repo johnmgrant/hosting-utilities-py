@@ -14,5 +14,5 @@
     "editor.wordBasedSuggestions": "off",
     "editor.formatOnSave": true
   },
-  "python.analysis.typeCheckingMode": "standard"
+  "python.analysis.languageServerMode": "full"
 }

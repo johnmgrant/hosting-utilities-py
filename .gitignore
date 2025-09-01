@@ -214,5 +214,5 @@ marimo/_lsp/
 __marimo__/
 
 # project specific
-./environments/
+environments/*
 !environments/.gitkeep
