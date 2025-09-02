@@ -1,3 +1,4 @@
 onepassword-sdk
 onepasswordconnectsdk
 typing-extensions
+python-dotenv

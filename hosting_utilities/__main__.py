@@ -1,3 +1,5 @@
+import asyncio
+
 from hosting_utilities.cli import main
 
-main()
+asyncio.run(main())
